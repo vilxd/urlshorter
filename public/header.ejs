@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(120deg, #fdfbfb, #ebedee);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        color: #007BFF;
+    }
+
+    .header p {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 30px;
+    }
+
+    .url-form {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .url-form input {
+        flex: 1;
+        padding: 10px;
+        font-size: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+    }
+
+    .url-form input:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+    .url-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .url-form button:hover {
+        background-color: #0056b3;
+    }
+
+    .result {
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        width: 100%;
+        display: none; /* initially hidden */
+    }
+
+    .footer {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>URL Shortener</h1>
+        <p>Quickly shorten your links with ease</p>
+    </header>
