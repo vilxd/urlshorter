@@ -5,7 +5,8 @@ const urlGenerator = async (req, res) => {
 }
 
 const urlRedirecter = async (req, res) => {
-    return redirectURL(req, res);
+    const {url_generated} = req.params;
+    return redirectURL(req, res, url_generated);
     
 
 }
